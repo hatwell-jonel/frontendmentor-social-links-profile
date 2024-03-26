@@ -31,7 +31,7 @@ ul{
 
 .container{
     margin: auto;
-    max-width: 375px;
+    width: 375px;
     height: 100vh;
     background-color: var(--clr-off-black);
 
