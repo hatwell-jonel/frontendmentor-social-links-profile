@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray: hsl(0, 0%, 20%);
+    --clr-dark-gray: hsl(0, 0%, 12%);
+    --clr-off-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    margin: auto;
+    max-width: 375px;
+    height: 100vh;
+    background-color: var(--clr-off-black);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: 15px;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: var(--clr-dark-gray);
+    width: 100% !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem 0rem;
+}
+
+.card__img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.card__name{
+    color: var(--clr-white);
+}
+
+.card__location{
+    color: var(--clr-green);
+}
+
+.card__statement{
+    color: var(--clr-white);
+}
+
+.card__socials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 17px;
+}
+
+.card__socials li{
+    width: 90%;
+    background-color: var(--clr-gray);
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.card__socials li a {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--clr-white);
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__socials li a:hover {
+    background-color: var(--clr-green);
+    transition: .3s ease;
+}
+
+
+footer{
+    position: absolute;
+    z-index: 9999;
+    background-color: var(--clr-gray);
+    padding: .5rem;
+    bottom: 1rem;
+    color: var(--clr-white);
+}
+
+footer a {
+    color: lightblue;
+}
